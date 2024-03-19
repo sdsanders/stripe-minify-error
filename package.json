@@ -1,0 +1,21 @@
+{
+  "name": "stripe-minify-error",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle --platform=node --minify --target=es2020 --outdir=dist",
+    "build:unminified": "esbuild index.js --bundle --platform=node --target=es2020 --outdir=dist",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Steve Sanders",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "stripe": "^14.21.0"
+  }
+}
